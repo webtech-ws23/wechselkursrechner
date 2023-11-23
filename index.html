@@ -2,32 +2,12 @@
 <html lang="de">
   <head>
     <meta charset="utf-8" />
-    <title>Währungsrechner</title>
-    <meta name="description" content="Wechselkurse für gängige Währungen" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="style.css" />
+    <meta name="description" content="Wechselkurse für gängige Währungen" />
+    <title>Währungsrechner</title>
   </head>
   <body>
-    <h1>Währungsrechner</h1>
-
-    <div class="container">
-      <div class="error-msg">Ein unerwarteter Fehler ist aufgetreten.</div>
-
-      <form class="amount">
-        <input name="from-value" type="number" value="1000" />
-        <select name="from-currency" id="from-currency">
-          <!-- Currencies -->
-        </select>
-
-        <input name="to-value" type="number" />
-        <select name="to-currency" id="to-currency">
-          <!-- Currencies -->
-        </select>
-      </form>
-
-      <div class="overview">Loading …</div>
-    </div>
-
-    <script src="script.js"></script>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
